@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="../style/menu.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="contenedorheader">
+            <div class="logo">
+                <a href="../index.html"><img src="../img/index/Logo.png" alt="Logo"></a>
+            </div>
+    </header>
+
+
+    <div class="container">
+        <!--Platos Cartas -->
+        <div class="box">
+            <img src="../img/Menu/platosCarta.jpg" alt="Platos">
+            <button onclick="showOverlay(this, 'platos')">Ver platos</button>
+            <div class="overlay">
+                <ul id="platos">
+                    <h3>Platos a la Carta</h3>
+                    <li>1. Espaguetis de calabacín</li>
+                    <li>2. Pasta con verduras</li>
+                    <li>3. Lasaña vegetariana</li>
+                    <li>4. Ratatouille</li>
+                    <li>5. Menestra de verduras</li>
+                    <li>6. Risotto de setas</li>
+                </ul>
+                <button onclick="hideOverlay(this)">Cerrar</button>
+            </div>
+        </div>
+
+        <!-- Bebidas-->
+        <div class="box">
+            <img src="../img/Menu/bbidasCarta.jpg" alt="Bebidas">
+            <button onclick="showOverlay(this, 'bebidas')">Ver bebidas</button>
+            <div class="overlay">
+                <ul id="bebidas">
+                    <h3>Bebidas Saludables</h3>
+                    <li>1. Batidos</li>
+                    <li>2. Jugos</li>
+                    <li>3. Frozen</li>
+                    <li>4. Yougurt Natural</li>
+                    <li>5. Especiales</li>
+                    <li>6. Energizantes</li>
+                </ul>
+                <button onclick="hideOverlay(this)">Cerrar</button>
+            </div>
+        </div>
+
+        <!-- Postres -->
+        <div class="box">
+            <img src="../img/Menu/postresCarta.jpg" alt="Postres">
+            <button onclick="showOverlay(this, 'postres')">Ver postres</button>
+            <div class="overlay">
+                <ul id="postres">
+                    <h3>Postres Salusables</h3>
+                    <li>1. Arroz con Leche Light</li>
+                    <li>2. Papaya, Yougurt y Miel</li>
+                    <li>3. Mazamorra de Soya</li>
+                    <li>4. Pie de Fresas</li>
+                    <li>5 .Helado Artesanal</li>
+                    <li>6. Panqueque de Avena</li>
+                </ul>
+                <button onclick="hideOverlay(this)">Cerrar</button>
+            </div>
+        </div>
+    </div>
+
+
+    <a href="../index.html">
+        <button>Volver al Inicio</button>
+    </a>
+
+    <script src="../JavaScript/menu.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(#ECEFFE, limegreen);
+  flex-direction: column;
+}
+
+.card-wrapper {
+  max-width: 1100px;
+  margin: 0 60px 35px;
+  padding: 20px 10px;
+  overflow: hidden;
+}
+
+.card-list .card-item .card-link {
+  display: block;
+  background: #fff;
+  padding: 18px;
+  user-select: none;
+  border-radius: 12px;
+  text-decoration: none;
+  border: 2px solid transparent;
+  transition: 0.2s ease;
+}
+
+.card-list .card-link .card-image {
+  width: 100%;
+  border-radius: 10px;
+  aspect-ratio: 11 / 10;
+  object-fit: cover;
+}
+
+.card-list .card-link .Servicios {
+  color: darkgreen;
+  background: yellowgreen;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.card-title {
+  font-size: 12px;
+  color: black;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.card-item button {
+  margin: 5px 0 0 0;
+  margin-left: 95px;
+  padding: 0 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
