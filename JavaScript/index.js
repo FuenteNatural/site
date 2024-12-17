@@ -158,3 +158,24 @@ confirmButton.addEventListener('click', () => {
     // Generar alerta con la información de la reserva
     alert(`Hola ${userName}, tienes tu reserva a las ${selectedTime} del ${selectedDate}.`);
 });
+
+
+const colors = ['gold', 'red', 'green']; // Colores de los copos de nieve
+    
+const createSnowflake = () => {
+    const snowflake = document.createElement('div');
+    snowflake.className = 'snowflake';
+    snowflake.innerHTML = '❄'; // Puedes cambiar el símbolo de la nieve aquí
+    snowflake.style.left = Math.random() * 100 + 'vw';
+    snowflake.style.color = colors[Math.floor(Math.random() * colors.length)]; // Color aleatorio
+    snowflake.style.fontSize = Math.random() * 1.5 + 1.5 + 'em'; // Tamaño más grande
+    snowflake.style.animationDuration = Math.random() * 3 + 2 + 's';
+    document.body.appendChild(snowflake);
+
+    // Eliminar el copo de nieve después de que haya caído
+    setTimeout(() => {
+        snowflake.remove();
+    }, 5000);
+};
+
+setInterval(createSnowflake, 300);

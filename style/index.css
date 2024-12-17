@@ -207,11 +207,14 @@ button a {
     justify-content: center;
     align-items: center;
 }
+
 /* footer prueba */
 
 footer {
-    background-color: #178f0c; /* Color de fondo oscuro */
-    color: #ffffff; /* Color de texto claro */
+    background-color: #178f0c;
+    /* Color de fondo oscuro */
+    color: #ffffff;
+    /* Color de texto claro */
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -225,23 +228,38 @@ footer {
     justify-content: space-between;
 }
 
-.footer-map, .footer-details, .footer-contact, .footer-form, .footer-socials {
+.footer-map,
+.footer-details,
+.footer-contact,
+.footer-form,
+.footer-socials {
     flex: 5;
     margin: 15px;
     min-width: 250px;
 }
 
-.footer-map h2, .footer-details h2, .footer-contact h2, .footer-form h2, .footer-socials h2 {
-    color: #ffffff; /* Rojo */
+.footer-map h2,
+.footer-details h2,
+.footer-contact h2,
+.footer-form h2,
+.footer-socials h2 {
+    color: #ffffff;
+    /* Rojo */
 }
 
-.footer-map a, .footer-details a, .footer-contact a {
-    color: #ffffff; /* Color de texto claro */
+.footer-map a,
+.footer-details a,
+.footer-contact a {
+    color: #ffffff;
+    /* Color de texto claro */
     text-decoration: none;
 }
 
-.footer-map a:hover, .footer-details a:hover, .footer-contact a:hover {
-    text-decoration: underline; /* Subrayado al pasar el mouse */
+.footer-map a:hover,
+.footer-details a:hover,
+.footer-contact a:hover {
+    text-decoration: underline;
+    /* Subrayado al pasar el mouse */
 }
 
 ul {
@@ -249,7 +267,10 @@ ul {
     padding: 0;
 }
 
-input[type="text"], input[type="email"], input[type="date"], select {
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select {
     width: 100%;
     padding: 10px;
     margin: 5px 0;
@@ -258,12 +279,17 @@ input[type="text"], input[type="email"], input[type="date"], select {
     transition: border 0.3s;
 }
 
-input[type="text"]:focus, input[type="email"]:focus, input[type="date"]:focus, select:focus {
-    border: 1px solid #d61b1b; /* Rojo al enfocar */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+select:focus {
+    border: 1px solid #d61b1b;
+    /* Rojo al enfocar */
 }
 
 button {
-    background-color: #fd0101; /* Rojo */
+    background-color: #fd0101;
+    /* Rojo */
     color: rgb(255, 255, 255);
     padding: 10px;
     border: none;
@@ -273,143 +299,234 @@ button {
 }
 
 button:hover {
-    background-color: #301f1f; /* Rojo oscuro al pasar el mouse */
-    transform: translateY(-2px); /* Efecto de relieve */
+    background-color: #301f1f;
+    /* Rojo oscuro al pasar el mouse */
+    transform: translateY(-2px);
+    /* Efecto de relieve */
 }
 
 
-    footer {
-        background-color: rgb(255, 255, 255); /* Color de fondo verde */
-        color: rgb(255, 255, 255); /* Color de letra dorado */
-        font-size: 18px; /* Tamaño de letra más grande */
-        padding: 20px; /* Espaciado interno */
-        transition: background-color 0.3s; /* Transición suave para el fondo */
-        display: flex; /* Usar flexbox para distribuir el contenido */
-        flex-direction: column; /* Colocar los elementos en columna */
-        width: 100%; /* Asegurarse de que el footer ocupe todo el ancho */
+footer {
+    background-color: rgb(255, 255, 255);
+    /* Color de fondo verde */
+    color: rgb(255, 255, 255);
+    /* Color de letra dorado */
+    font-size: 18px;
+    /* Tamaño de letra más grande */
+    padding: 20px;
+    /* Espaciado interno */
+    transition: background-color 0.3s;
+    /* Transición suave para el fondo */
+    display: flex;
+    /* Usar flexbox para distribuir el contenido */
+    flex-direction: column;
+    /* Colocar los elementos en columna */
+    width: 100%;
+    /* Asegurarse de que el footer ocupe todo el ancho */
+}
+
+.footer-container {
+    display: flex;
+    /* Usar flexbox para el contenedor */
+    justify-content: space-between;
+    /* Espacio entre los elementos */
+    width: 100%;
+    /* Asegurarse de que el contenedor ocupe todo el ancho */
+}
+
+.footer-map,
+.footer-details,
+.footer-contact,
+.footer-form {
+    flex: 1;
+    /* Cada sección ocupa el mismo espacio */
+    padding: 10px;
+    /* Espaciado interno */
+    text-align: center;
+    /* Centrar el texto */
+}
+
+.footer-map iframe {
+    width: 100%;
+    /* Hacer que el iframe ocupe todo el ancho */
+    height: auto;
+    /* Ajustar la altura automáticamente */
+}
+
+h2 {
+    font-size: 24px;
+    /* Tamaño de letra más grande para los encabezados */
+    transition: color 0.3s;
+    /* Transición suave para el color */
+}
+
+h2:hover {
+    color: #ffffff;
+    /* Cambio de color al pasar el mouse */
+}
+
+p,
+ul li {
+    transition: color 0.3s;
+    /* Transición suave para el color */
+}
+
+p:hover,
+ul li:hover {
+    color: #ffffff;
+    /* Cambio de color al pasar el mouse */
+}
+
+.redes {
+    width: 100%;
+    text-align: center;
+    font-size: 70px;
+}
+
+.redes img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: transform 0.3s, filter 0.3s;
+    /* Transición suave para el hover */
+    filter: grayscale(100%);
+    /* Aplicar filtro en blanco y negro */
+}
+
+.redes img:hover {
+    transform: scale(1.2);
+    /* Aumentar tamaño al pasar el mouse */
+    filter: grayscale(0%);
+    /* Eliminar el filtro en hover para mostrar el color original */
+    color: #ffffff;
+    /* Color de texto (no aplicable a imágenes) */
+    box-shadow: 0 0 55px rgb(207, 58, 12);
+    text-shadow: 0 0 55px rgb(199, 49, 11);
+    animation: iconos 2s linear infinite;
+}
+
+@keyframes iconos {
+
+    0%,
+    7% {
+        transform: rotateZ(0);
     }
-    
-    .footer-container {
-        display: flex; /* Usar flexbox para el contenedor */
-        justify-content: space-between; /* Espacio entre los elementos */
-        width: 100%; /* Asegurarse de que el contenedor ocupe todo el ancho */
+
+    15% {
+        transform: rotateZ(-15deg);
     }
-    
-    .footer-map, .footer-details, .footer-contact, .footer-form {
-        flex: 1; /* Cada sección ocupa el mismo espacio */
-        padding: 10px; /* Espaciado interno */
-        text-align: center; /* Centrar el texto */
+
+    20% {
+        transform: rotateZ(10deg);
     }
-    
-    .footer-map iframe {
-        width: 100%; /* Hacer que el iframe ocupe todo el ancho */
-        height: auto; /* Ajustar la altura automáticamente */
+
+    25% {
+        transform: rotateZ(-10deg);
     }
-    
-    h2 {
-        font-size: 24px; /* Tamaño de letra más grande para los encabezados */
-        transition: color 0.3s; /* Transición suave para el color */
+
+    30% {
+        transform: rotateZ(6deg);
     }
-    
-    h2:hover {
-        color: #ffffff; /* Cambio de color al pasar el mouse */
+
+    35% {
+        transform: rotateZ(-4deg);
     }
-    
-    p, ul li {
-        transition: color 0.3s; /* Transición suave para el color */
+
+    40%,
+    100% {
+        transform: rotateZ(0);
     }
-    
-    p:hover, ul li:hover {
-        color: #ffffff; /* Cambio de color al pasar el mouse */
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+    /* Tamaño de letra más grande para el pie de página */
+    color: rgb(190, 128, 13);
+    /* Color dorado */
+    transition: color 0.3s;
+    /* Transición suave para el color */
+}
+
+.footer-bottom:hover {
+    color: #000000;
+    /* Cambio de color al pasar el mouse */
+}
+
+.footer-background {
+    position: relative;
+    /* Necesario para el posicionamiento del pseudo-elemento */
+    background-image: url('../img/imgfooter/pexelsfooter.jpg');
+    /* Ruta de la imagen de fondo */
+    background-repeat: no-repeat;
+    /* Evitar que la imagen se repita */
+    background-size: cover;
+    /* Asegurarse de que la imagen cubra todo el área */
+    background-position: center;
+    /* Centrar la imagen en el contenedor */
+    width: 100%;
+    /* Asegurarse de que el footer ocupe todo el ancho */
+    min-height: 300px;
+    /* Altura mínima para asegurar que la imagen se vea bien */
+    padding: 70px;
+    /* Espaciado interno */
+
+    color: gold;
+    /* Color de letra dorado */
+    font-size: 20px;
+    /* Tamaño de letra más grande */
+    transition: background-color 0.3s;
+    /* Transición suave para el fondo */
+    overflow: hidden;
+    /* Asegurarse de que el contenido no se desborde */
+}
+
+.footer-background::before {
+    content: "";
+    /* Necesario para crear el pseudo-elemento */
+    position: absolute;
+    /* Posicionamiento absoluto */
+    top: 0;
+    /* Alinear al borde superior */
+    left: 0;
+    /* Alinear al borde izquierdo */
+    right: 0;
+    /* Alinear al borde derecho */
+    bottom: 0;
+    /* Alinear al borde inferior */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Color oscuro con opacidad (ajusta el valor para más o menos oscuridad) */
+    filter: blur(5px);
+    /* Desenfoque (ajusta el valor según sea necesario) */
+    z-index: 1;
+    /* Asegurarse de que esté por debajo del contenido */
+}
+
+.footer-background>* {
+    position: relative;
+    /* Asegurarse de que el contenido esté por encima del overlay */
+    z-index: 2;
+    /* Asegurarse de que el contenido esté por encima del pseudo-elemento */
+}
+
+.snowflake {
+    position: absolute;
+    top: -10px;
+    color: gold;
+    /* Color por defecto */
+    font-size: 2em;
+    /* Tamaño más grande */
+    pointer-events: none;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0);
     }
-    
-    .redes {
-        width: 100%;
-        text-align: center;
-        font-size: 70px;
+
+    100% {
+        transform: translateY(100vh);
     }
-    
-    .redes img {
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        transition: transform 0.3s, filter 0.3s; /* Transición suave para el hover */
-        filter: grayscale(100%); /* Aplicar filtro en blanco y negro */
-    }
-    
-    .redes img:hover {
-        transform: scale(1.2); /* Aumentar tamaño al pasar el mouse */
-        filter: grayscale(0%); /* Eliminar el filtro en hover para mostrar el color original */
-        color: #ffffff; /* Color de texto (no aplicable a imágenes) */
-        box-shadow: 0 0 55px rgb(207, 58, 12);
-        text-shadow: 0 0 55px rgb(199, 49, 11);
-        animation: iconos 2s linear infinite;
-    }
-    
-    @keyframes iconos {
-        0%, 7% {
-            transform: rotateZ(0);
-        }
-        15% {
-            transform: rotateZ(-15deg);
-        }
-        20% {
-            transform: rotateZ(10deg);
-        }
-        25% {
-            transform: rotateZ(-10deg);
-        }
-        30% {
-            transform: rotateZ(6deg);
-        }
-        35% {
-            transform: rotateZ(-4deg);
-        }
-        40%, 100% {
-            transform: rotateZ(0);
-        }
-    }
-    
-    .footer-bottom {
-        text-align: center;
-        margin-top: 20px;
-        font-size: 24px; /* Tamaño de letra más grande para el pie de página */
-        color: rgb(190, 128, 13); /* Color dorado */
-        transition: color 0.3s; /* Transición suave para el color */
-    }
-    
-    .footer-bottom:hover {
-        color: #000000; /* Cambio de color al pasar el mouse */
-    }
-    .footer-background {
-        position: relative; /* Necesario para el posicionamiento del pseudo-elemento */
-        background-image: url('../img/imgfooter/pexelsfooter.jpg'); /* Ruta de la imagen de fondo */
-        background-repeat: no-repeat; /* Evitar que la imagen se repita */
-        background-size: cover; /* Asegurarse de que la imagen cubra todo el área */
-        background-position: center; /* Centrar la imagen en el contenedor */
-        width: 100%; /* Asegurarse de que el footer ocupe todo el ancho */
-        min-height: 300px; /* Altura mínima para asegurar que la imagen se vea bien */
-        padding: 70px; /* Espaciado interno */
-        
-        color: gold; /* Color de letra dorado */
-        font-size: 20px; /* Tamaño de letra más grande */
-        transition: background-color 0.3s; /* Transición suave para el fondo */
-        overflow: hidden; /* Asegurarse de que el contenido no se desborde */
-    }
-    
-    .footer-background::before {
-        content: ""; /* Necesario para crear el pseudo-elemento */
-        position: absolute; /* Posicionamiento absoluto */
-        top: 0; /* Alinear al borde superior */
-        left: 0; /* Alinear al borde izquierdo */
-        right: 0; /* Alinear al borde derecho */
-        bottom: 0; /* Alinear al borde inferior */
-        background-color: rgba(0, 0, 0, 0.5); /* Color oscuro con opacidad (ajusta el valor para más o menos oscuridad) */
-        filter: blur(5px); /* Desenfoque (ajusta el valor según sea necesario) */
-        z-index: 1; /* Asegurarse de que esté por debajo del contenido */
-    }
-    
-    .footer-background > * {
-        position: relative; /* Asegurarse de que el contenido esté por encima del overlay */
-        z-index: 2; /* Asegurarse de que el contenido esté por encima del pseudo-elemento */
-    }
+}
