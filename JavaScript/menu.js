@@ -1,12 +1,9 @@
 function addTextToImage(box, text) {
     let textOverlay = box.querySelector('.text-overlay');
     if (!textOverlay) {
-    // Crear el div
         textOverlay = document.createElement('div');
         textOverlay.classList.add('text-overlay');
         textOverlay.innerText = text;
-
-    // Agrego el div al contenedor de la caja
         box.appendChild(textOverlay);
     }
 }

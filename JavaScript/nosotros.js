@@ -12,11 +12,9 @@ function updateCarousel(newIndex) {
     } else if (newIndex >= carouselItems.length) {
         newIndex = 0;
     }
-
-    // Quitar la clase "active" del elemento actual
+  
     carouselItems[cIndex].classList.remove('active');
 
-    // Agregar la clase "active" al nuevo elemento
     carouselItems[newIndex].classList.add('active');
     cIndex = newIndex;
 }

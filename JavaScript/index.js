@@ -124,51 +124,51 @@ const dateInput = document.getElementById('date');
 const nameInput = document.getElementById('name');
 const emailInput = document.getElementById('email');
 
+
+
+
+
 // Evento para el botón de generar reserva
 generateButton.addEventListener('click', () => {
-    // Validar el correo electrónico
+   
     const emailValue = emailInput.value;
-    const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/; // Expresión regular para validar el correo
+    const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/; 
 
     if (!emailPattern.test(emailValue)) {
         alert('Correo no válido. Por favor, ingresa un correo electrónico válido.');
-        return; // Salir de la función si el correo no es válido
+        return; 
     }
 
-    // Mostramos el contenedor de fecha y hora
     dateTimeContainer.style.display = 'block';
     
-    // Al seleccionar una fecha, mostramos el selector de hora
     dateInput.addEventListener('change', () => {
         timeSelect.style.display = 'block';
     });
 });
 
-// Habilitar el botón de confirmar reserva solo si hay fecha y hora seleccionadas
+
 timeSelect.addEventListener('change', () => {
-    confirmButton.style.display = dateInput.value && timeSelect.value ? 'block' : 'none'; // Mostrar u ocultar el botón
+    confirmButton.style.display = dateInput.value && timeSelect.value ? 'block' : 'none'; 
 });
 
-// Evento para el botón de confirmar reserva
 confirmButton.addEventListener('click', () => {
     const selectedDate = dateInput.value;
     const selectedTime = timeSelect.value;
     const userName = nameInput.value;
-
-    // Generar alerta con la información de la reserva
+ 
     alert(`Hola ${userName}, tienes tu reserva a las ${selectedTime} del ${selectedDate}.`);
 });
 
 
-const colors = ['gold', 'red', 'green']; // Colores de los copos de nieve
+const colors = ['gold', 'red', 'green']; 
     
 const createSnowflake = () => {
     const snowflake = document.createElement('div');
     snowflake.className = 'snowflake';
-    snowflake.innerHTML = '❄'; // Puedes cambiar el símbolo de la nieve aquí
+    snowflake.innerHTML = '❄'; 
     snowflake.style.left = Math.random() * 100 + 'vw';
-    snowflake.style.color = colors[Math.floor(Math.random() * colors.length)]; // Color aleatorio
-    snowflake.style.fontSize = Math.random() * 1.5 + 1.5 + 'em'; // Tamaño más grande
+    snowflake.style.color = colors[Math.floor(Math.random() * colors.length)];
+    snowflake.style.fontSize = Math.random() * 1.5 + 1.5 + 'em'; 
     snowflake.style.animationDuration = Math.random() * 3 + 2 + 's';
     document.body.appendChild(snowflake);
 
